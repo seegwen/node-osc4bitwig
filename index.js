@@ -23,9 +23,9 @@ var Song = require('./lib/song');
  */
 var OSC4Bitwig = function (opts) {
   opts = opts || {};
-  this.host = opts.host || '192.168.1.111';
+  this.host = opts.host || '127.0.0.1';
   this.port = opts.port || 9099;
-  this.bitwigHost = opts.bitwigHost || '192.168.1.111';
+  this.bitwigHost = opts.bitwigHost || '127.0.0.1';
   this.bitwigPort = opts.bitwigPort || 8099;
   this.waitTime = opts.waitTime || 1000;
   this.debug = opts.debug || false;
